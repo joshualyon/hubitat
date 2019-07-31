@@ -70,7 +70,6 @@ def sendCustomCommand(command){
 }
 
 def sendARCommand(command){
-	def path = varCommand 
 	def body = "" 
 	def headers = [:] 
 	headers.put("HOST", "${deviceIP}:1817")
@@ -82,7 +81,7 @@ def sendARCommand(command){
 			body: body,
 			headers: headers
         	)
-		log.debug hubAction
+		//log.debug hubAction
 		return hubAction
 	}
 	catch (Exception err) {
