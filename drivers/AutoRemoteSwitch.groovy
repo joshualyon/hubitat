@@ -8,10 +8,10 @@ metadata {
 		command "sendCommand", ["string"]
 		command "sendCommandMessage", ["string", "string"]
         
-        preferences {
-		input(name: "deviceIP", type: "string", title:"AutoRemote Device IP Address", description: "", required: true, displayDuringSetup: true)
-		input(name: "customCommand", type: "string", title:"Default Command to Send", description: "ex: {command}=:=on", displayDuringSetup: true)
-	    }
+		preferences {
+			input(name: "deviceIP", type: "string", title:"AutoRemote Device IP Address", description: "", required: true, displayDuringSetup: true)
+			input(name: "customCommand", type: "string", title:"Default Command to Send", description: "ex: {command}=:=on", displayDuringSetup: true)
+	    	}
 	}
 }
 
